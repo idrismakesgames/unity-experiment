@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
@@ -60,7 +59,6 @@ public class Rocket : MonoBehaviour
         _rigidBody.freezeRotation = true; // Take manual control of rotation
 
         float rotationThisFrame = rcsThrust * Time.deltaTime;
-            ; 
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.forward * rotationThisFrame);
